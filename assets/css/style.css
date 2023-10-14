@@ -1,0 +1,32 @@
+font-family: 'Saira Stencil One', sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F6FCFF;
+    height: 100%;
+    /*azul #0C9CE1*/
+}
+
+#cxLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cxIpt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80vw;
+}
