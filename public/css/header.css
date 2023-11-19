@@ -1,0 +1,30 @@
+#cabecalho{
+    background-color: #85D3F2;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#hamburguer{
+    cursor: pointer;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    margin:2rem 0 0 2rem;
+    color: #fff;
+    width: 12rem;
+}
+
+.cxLogo{
+    width: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cxLogo img{
+    width: 100%;
+}

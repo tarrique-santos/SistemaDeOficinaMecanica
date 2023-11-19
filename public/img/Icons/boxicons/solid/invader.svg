@@ -1,0 +1,7 @@
+<svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path d="M8 3H6v2h2V3Z"></path>
+     <path d="M11 19H8v2h3v-2Z"></path>
+     <path d="M18 3h-2v2h2V3Z"></path>
+     <path d="M16 19h-3v2h3v-2Z"></path>
+     <path d="M20 11V9h-2V7h-2V5h-2v2h-4V5H8v2H6v2H4v2H2v8h2v-4h2v4h2v-3h8v3h2v-4h2v4h2v-8h-2Zm-10 1H8V9h2v3Zm6 0h-2V9h2v3Z"></path>
+</svg>

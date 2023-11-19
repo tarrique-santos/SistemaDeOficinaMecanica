@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Saira Stencil One', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho{
+    background-color: #85D3F2;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background-color: #f5fcff;
+    height: 100%;
+}
+
+#logo{
+    margin:2rem 0 0 2rem;
+    color: #fff;
+    width: 12rem;
+}
+
+.cxLogo{
+    width: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cxLogo img{
+    width: 100%;
+}
+
+#cadastroDeUsuario{
+    margin-left: 5vw;
+    border: 1px solid #000;
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cxIpt{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}

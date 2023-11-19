@@ -1,0 +1,28 @@
+body{
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #85D3F2;
+    position: fixed;
+    height: 11vh;
+}
+
+.linkAtalho > svg {
+    color: #f5fcff;
+    height: 3rem;
+}
+
+#cxFooter{
+    display: flex;
+    padding-top: 10vh;
+
+}
+.cxAtalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
