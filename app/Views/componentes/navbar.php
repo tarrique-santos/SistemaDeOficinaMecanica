@@ -5,7 +5,7 @@
 <main id="cxFooter">
     <footer>
         <div class="cxAtalho">
-            <a class="linkAtalho" href="inicio">
+            <a class="linkAtalho" href="home">
                 <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -28,7 +28,7 @@
             </a>
         </div>
         <div class="cxAtalho">
-            <a class="linkAtalho" href="">
+            <a class="linkAtalho" href="listar">
                 <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.8 2.4a1.2 1.2 0 1 0 0 2.4h2.4a1.2 1.2 0 1 0 0-2.4h-2.4Z"></path>

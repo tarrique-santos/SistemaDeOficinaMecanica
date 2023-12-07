@@ -4,11 +4,13 @@ body{
 
 footer{
     width: 100%;
+    height: 11vh;
     display: flex;
     justify-content: space-evenly;
     background-color: #85D3F2;
     position: fixed;
-    height: 11vh;
+    bottom: 0;
+    left: 0;
 }
 
 .linkAtalho > svg {
@@ -16,11 +18,6 @@ footer{
     height: 3rem;
 }
 
-#cxFooter{
-    display: flex;
-    padding-top: 10vh;
-
-}
 .cxAtalho{
     display: flex;
     align-items: center;

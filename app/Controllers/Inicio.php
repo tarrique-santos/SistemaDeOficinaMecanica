@@ -13,12 +13,28 @@ class Inicio extends BaseController
     }
     public function index()
     {
+        // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        //     $email = $_POST["email"];
+        //     $senha = $_POST["senha"];
+        //     echo "teste";
+
+        //     if ($email === 'admin@gmail.com' && $senha === '123456') {
+        //         header('Location: /home');
+        //         echo "logou";
+        //         exit;
+        //     } else {
+        //         header('Location: /login');
+        //         echo "não logou";
+        //         exit;
+        //     }
+        // }
         $mecanicos = $this->userModel->findAll(); 
         $dados =[
             "mecanicos"=> $mecanicos
         ];
+
         echo view('componentes/header');
-        echo view('home',$dados);
-        return view('componentes/navbar');
+        echo view('Views/home');
+        echo view('componentes/navbar');
     }
 }

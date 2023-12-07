@@ -3,21 +3,21 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\ClienteModel;
+use App\Models\MecanicoModel;
 
-class CadastrarUsuario extends BaseController
+class CadastrarMecanico extends BaseController
 {
     private $userModel;
 
     public function __construct()
     {
-        $this->userModel = new ClienteModel();
+        $this->userModel = new MecanicoModel();
     }
 
     public function index()
     {
         helper('form');
-        echo view('cadastrarUsuario');
+        echo view('cadastrarMecanico');
     }
 
     public function criar()

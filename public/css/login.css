@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+h1{
+    color: #85D3F2;
+    text-align: center;
+}
+
 #cabecalho{
     background-color: #85D3F2;
     height: 5rem;
@@ -14,12 +19,13 @@
 body{
     background-color: #f5fcff;
     height: 100%;
+    overflow-x:hidden;
 }
 
 #logo{
     margin:2rem 0 0 2rem;
     color: #fff;
-    width: 12rem;
+    width: 23rem;
 }
 
 .cxLogo{
@@ -48,4 +54,30 @@ body{
     display: flex;
     align-items: start;
     justify-content: space-between;
+}
+
+form{
+    height: 95vh;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnVoltar{
+    margin: 1rem 0 0 1rem;
+    cursor: pointer;
+}
+/*#ff7f00*/
+#btnLogar{
+    background-color: #85D3F2;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: 1px solid #85D3F2;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 650;
+    color: #fff;
+    cursor: pointer;
 }
