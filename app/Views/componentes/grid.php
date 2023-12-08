@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/grid.css">
 </head>
 <div id="grid">
-    <a>
+    <a href='cadastrarEquipe'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@
             <h4>Nova Peça</h4>
         </div>
     </a>
-    <a>
+    <a href='cadastrarVeiculo'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@
             <h4>Novo Automóvel</h4>
         </div>
     </a>
-    <a>
+    <a href='cadastrarServico'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
             <h4>Novo Serviço</h4>
         </div>
     </a>
-    <a>
+    <a href='criarOrdem'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">

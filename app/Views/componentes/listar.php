@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/grid.css">
 </head>
 <div id="grid">
-    <a>
+    <a href='listarEquipes'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@
             <h4>Listar Equipes</h4>
         </div>
     </a>
-    <a>
+    <a href='listarPecas'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@
             <h4>Listar Peças</h4>
         </div>
     </a>
-    <a>
+    <a href='listarVeiculo'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@
             <h4>Listar Automóveis</h4>
         </div>
     </a>
-    <a>
+    <a href='listarServicos'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
             <h4>Listar Serviços</h4>
         </div>
     </a>
-    <a>
+    <a href='/listarOSs'>
         <div class="cadastrarItem">
             <svg id="iconMenu" width="70" height="70" fill="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">

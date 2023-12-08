@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ServicoModel extends Model
+class OSModel extends Model
 {
-    protected $table            = 'servicos';
+    protected $table            = 'ordemServicos';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'id','nome','descricao','preco'
+        'id','clienteid','veiculoid','pecaid','dataabertura','dataconclusao','descricaoproblema','statusOrdem','equipeid','valoTotal'
     ];
 
     // Dates
