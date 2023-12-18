@@ -24,7 +24,8 @@ class CadastrarServico extends BaseController
         //dd($dados);
 
         if ($this->servicoModel->save($dados)) {
-            echo 'Salvou com sucesso';
+            // echo 'Salvou com sucesso';
+            echo view('componentes/salvoComSucesso');
         } else {
             echo 'Erro ao salvar';
         }

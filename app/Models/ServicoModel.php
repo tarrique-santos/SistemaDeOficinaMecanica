@@ -39,4 +39,8 @@ class ServicoModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+    public function getServicoById($servicoid)
+    {
+        return $this->find($servicoid);
+    }
 }

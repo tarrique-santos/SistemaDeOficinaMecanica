@@ -39,4 +39,8 @@ class EquipeModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+    public function getEquipeById($equipeid)
+    {
+        return $this->find($equipeid);
+    }
 }

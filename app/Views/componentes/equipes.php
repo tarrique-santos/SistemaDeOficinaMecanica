@@ -3,19 +3,21 @@
 </head>
 <h1 id="veiculos">Equipes cadastradas</h1>
 <div id="cx">
-    <?php foreach ($pecas as $peca):?>
-    <div id="cxPecas">
+    <?php foreach ($equipes as $equipe):?>
+    <div id="cxequipes">
         <div>
-            <h4>
-                <?php echo $peca['nome'] ?>
+            <h4>Nome:
+                <?php echo $equipe['nome'] ?>
             </h4>
-            <div>
-                <?php echo $peca['id'] ?>
+            <div id='caixa'>
+                <h4>Código:</h4>
+                <?php echo $equipe['id'] ?>
             </div>
         </div>
         <div>
             <h6>
-                <?php echo $peca['idmecanico'] ?>
+                Membros da equipe:
+                <?php echo $equipe['nomeMecanico'] ?>
             </h6>
         </div>
     </div>

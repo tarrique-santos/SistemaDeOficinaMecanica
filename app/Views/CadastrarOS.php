@@ -24,7 +24,7 @@
     </a>
 
     <form action="<?php echo url_to('os/criar') ?>" method="post">
-        Cadastro de Cliente:
+        Cadastro de OS:
 
         <div class="cxLogin">
             <label for="">Placa veículo</label>
@@ -71,7 +71,7 @@
 
         <div class="cxLogin">
             <label for="">Status</label>
-            <select name="statusordem" id="status">
+            <select name="statusordem" id="statusordem">
                 <option value="pendente" name='statusordem'>Pendente</option>
             </select>
         </div>

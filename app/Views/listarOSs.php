@@ -12,36 +12,35 @@
 </head>
 
 <body>
-
-    <h1>Listagem de Ordens de Serviço</h1>
-
+    <h1>Listagem de Ordens de Serviço:</h1>
     <table>
         <thead>
             <tr>
-                <th>ID</th>
+                <th>ID/Código</th>
                 <th>Veículo</th>
                 <th>Equipe</th>
                 <th>Peça</th>
                 <th>Data de Abertura</th>
                 <th>Data de Conclusão</th>
                 <th>Descrição do Problema</th>
-                <!-- <th>Status</th> -->
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($ordens as $ordem): ?>
-                <tr>
-                    <td><?= $ordem['id'] ?></td>
-                    <td><?= $ordem['veiculoid'] ?></td> <!-- Substitua pelo nome real do campo -->
-                    <td><?= $ordem['equipeid'] ?></td> <!-- Substitua pelo nome real do campo -->
-                    <td><?= $ordem['pecaid'] ?></td> <!-- Substitua pelo nome real do campo -->
-                    <td><?= $ordem['dataabertura'] ?></td>
-                    <td><?= $ordem['dataconclusao'] ?></td>
-                    <td><?= $ordem['descricaoproblema'] ?></td>
-                    <td><?= $ordem['statusordem'] ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
+    <?php foreach ($ordens as $ordem): ?>
+        <tr>
+            <td><?= $ordem['id'] ?></td>
+            <td><?= $ordem['veiculoPlaca'] ?></td>
+            <td><?= $ordem['equipeNome'] ?></td>
+            <td><?= $ordem['pecaNome'] ?></td>
+            <td><?= $ordem['dataabertura'] ?></td>
+            <td><?= $ordem['dataconclusao'] ?></td>
+            <td><?= $ordem['descricaoproblema'] ?></td>
+            <td><?= $ordem['statusordem'] ?></td>
+        </tr>
+    <?php endforeach; ?>
+</tbody>
+
     </table>
 </body>
 

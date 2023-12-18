@@ -41,4 +41,8 @@ class PecaModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+    public function getPecaById($pecaid)
+    {
+        return $this->find($pecaid);
+    }
 }

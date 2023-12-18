@@ -28,7 +28,8 @@ class CadastrarPeca extends BaseController
         //dd($dados);
 
         if ($this->pecaModel->save($dados)) {
-            echo 'Salvou com sucesso';
+            echo view('componentes/salvoComSucesso');
+            // echo 'Salvou com sucesso';
         } else {
             echo 'Erro ao salvar';
         }

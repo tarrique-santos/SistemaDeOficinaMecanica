@@ -39,4 +39,8 @@ class VeiculoModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+    public function getVeiculoById($veiculoid)
+    {
+        return $this->find($veiculoid);
+    }
 }

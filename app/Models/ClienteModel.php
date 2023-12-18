@@ -46,4 +46,9 @@ class ClienteModel extends Model
         $args['data']['senha'] = password_hash($args['data']['password'], PASSWORD_DEFAULT);
         return $args;
     }
+
+    public function getClienteById($clienteid)
+    {
+        return $this->find($clienteid);
+    }
 }

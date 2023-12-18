@@ -26,25 +26,37 @@
 
     <form action="<?php echo url_to('equipes/criar') ?>" method="post">
 
-        <div class="cxLogin">
-            <label for="">Nome equipe</label>
-            <input type="text" name="nome">
-        </div>
-        <div class="cxLogin">
-            <label for="">Mecânico</label>
-            <select name="idmecanico" id="dono_id" values='idmecanico'>
-                <?php foreach ($mecanicos as $mecanico): ?>
-                    <option value="<?php echo $mecanico['id'] ?>" name='idmecanico'>
+<div class="cxLogin">
+    <label for="">Nome da equipe:</label>
+    <input type="text" name="nome">
+</div>
+<div class="cxLogin">
+    <label for="">Mecânicos:</label>
+    <div id='cxCheckBox'>
+        <?php foreach ($mecanicos as $mecanico): ?>
+            <div id='checks'>
+                <div>
+                    <label for="">
                         <?php echo $mecanico['nome'] ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-        </div>
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" value="<?php echo $mecanico['id'] ?>" name='idmecanico[]' id='checkbox'>
+                    <!-- Adicione [] aqui para indicar que é um array -->
+                    <input type="hidden" name="idmecanico_hidden[]" value="<?php echo $mecanico['id'] ?>">
+                    <!-- Adicione um campo hidden para garantir que todos os checkboxes sejam enviados -->
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
 
-        <div class="cxEntrar">
-            <input id="btnLogar" type="submit" placeholder="" value="Salvar">
-        </div>
-    </form>
+
+<div class="cxEntrar">
+    <input id="btnLogar" type="submit" placeholder="" value="Salvar">
+</div>
+</form>
+
 
 </body>
 

@@ -27,7 +27,8 @@ class CadastrarMecanico extends BaseController
         //dd($dados);
 
         if ($this->userModel->save($dados)) {
-            echo 'Salvou com sucesso';
+            echo view('componentes/salvoComSucesso');
+            // echo 'Salvou com sucesso';
         } else {
             echo 'Erro ao salvar';
         }

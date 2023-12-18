@@ -16,28 +16,40 @@ class CadastrarEquipe extends BaseController
         $this->equipeModel = new EquipeModel();
         $this->mecanicoModel = new MecanicoModel();
     }
+
     public function index()
     {
         helper('form');
     
         $mecanicos = $this->mecanicoModel->findAll();
         
-        // Verifica se há mecanicos antes de passar para a view
         if (!empty($mecanicos)) {
             $data['mecanicos'] = $mecanicos;
             echo view("cadastrarEquipe", $data);
         } else {
-            echo 'Nenhum mecânico encontrado.'; // ou trate conforme necessário
+            echo 'Nenhum mecânico encontrado.';
         }
     }
+
     public function criar()
     {
         $dados = $this->request->getPost();
-
+    
+        // Certifique-se de que o índice 'idmecanico' existe antes de usá-lo
+        if (isset($dados['idmecanico']) && is_array($dados['idmecanico'])) {
+            // Converta o array de IDs em uma string separada por vírgulas
+            $idMecanicos = implode(',', $dados['idmecanico']);
+    
+            // Adicione a string ao array de dados
+            $dados['idmecanico'] = $idMecanicos;
+        }
+        // $this->equipeModel->save($dados);
         if ($this->equipeModel->save($dados)) {
-            echo 'Salvou com sucesso';
+            echo view('componentes/salvoComSucesso');
+            // echo 'Salvou com sucesso';
         } else {
             echo 'Erro ao salvar';
         }
     }
+    
 }

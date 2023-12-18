@@ -94,3 +94,29 @@ input{
     color: #fff;
     cursor: pointer;
 }
+#cxCheckBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#checks {
+    display: flex;
+    align-items: center;
+    width: 26rem;
+    justify-content: center;
+    background-color: #85D3F2;
+    padding: 1rem 0.2rem;
+}
+
+#checks > div{
+    margin:0 2rem;
+    width: 13rem;
+    color: #fff;
+}
+
+#checkbox{
+    width: 3rem;
+    border: 0.1px solid #85D3F2;
+}

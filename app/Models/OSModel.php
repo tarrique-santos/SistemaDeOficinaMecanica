@@ -13,7 +13,7 @@ class OSModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'id','clienteid','veiculoid','pecaid','dataabertura','dataconclusao','descricaoproblema','statusOrdem','equipeid','valoTotal'
+        'id','clienteid','veiculoid','pecaid','dataabertura','dataconclusao','descricaoproblema','statusordem','equipeid','valoTotal'
     ];
 
     // Dates
